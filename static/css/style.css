@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f3f6fb;
+    color: #172033;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.main-navbar {
+    background: linear-gradient(
+        90deg,
+        #5b3df5,
+        #7c3aed,
+        #ec4899
+    );
+    padding: 16px 0;
+    box-shadow: 0 10px 30px rgba(91, 61, 245, 0.18);
+}
+
+.navbar-brand {
+    color: white !important;
+    font-weight: 800;
+    font-size: 21px;
+}
+
+.brand-icon {
+    margin-right: 8px;
+}
+
+.nav-link {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: white !important;
+}
+
+.nav-link i {
+    margin-right: 5px;
+}
+
+.user-pill {
+    color: white;
+    padding: 8px 13px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.14);
+}
+
+.user-pill i {
+    margin-right: 5px;
+}
+
+.logout-btn {
+    border: none;
+    font-weight: 600;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+.main-content {
+    min-height: calc(100vh - 75px);
+}
+
+.dashboard-wrapper {
+    padding: 45px 5%;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.welcome-text {
+    color: #6d7890;
+    margin-bottom: 5px;
+}
+
+.dashboard-header h1 {
+    font-weight: 800;
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #8b95a7;
+}
+
+.add-main-btn {
+    border-radius: 14px;
+    padding: 13px 22px;
+    font-weight: 600;
+}
+
+
+/* =========================
+   STAT CARDS
+========================= */
+
+.stat-card {
+    background: white;
+    border-radius: 24px;
+    padding: 30px;
+    min-height: 215px;
+    box-shadow: 0 10px 35px rgba(30, 41, 59, 0.08);
+    transition: 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(30, 41, 59, 0.13);
+}
+
+.stat-icon {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.stat-title {
+    color: #687386;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.stat-card h2 {
+    font-size: 30px;
+    font-weight: 800;
+    color: #172033;
+}
+
+
+/* =========================
+   CHARTS
+========================= */
+
+.chart-card {
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 28px;
+    min-height: 530px;
+    box-shadow: 0 10px 35px rgba(30, 41, 59, 0.08);
+}
+
+.chart-title {
+    margin-bottom: 20px;
+}
+
+.chart-title h4 {
+    font-weight: 700;
+    margin: 0;
+    color: #172033;
+}
+
+.chart-title h4 i {
+    margin-right: 8px;
+}
+
+.chart-title p {
+    margin: 5px 0 0;
+    color: #8a94a6;
+    font-size: 14px;
+}
+
+.chart-container {
+    position: relative;
+    width: 100%;
+    height: 410px;
+}
+
+.chart-empty {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #8a94a6;
+    pointer-events: none;
+}
+
+.chart-empty div {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   RECENT EXPENSES
+========================= */
+
+.recent-card {
+    background: white;
+    border-radius: 24px;
+    padding: 30px;
+    margin-bottom: 40px;
+    box-shadow: 0 10px 35px rgba(30, 41, 59, 0.08);
+}
+
+.recent-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.recent-header h4 {
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.recent-header p {
+    color: #8a94a6;
+    margin: 0;
+}
+
+.expense-table th {
+    color: #7a8599;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.expense-table td {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.category-badge {
+    background: #eef2ff;
+    color: #4f46e5;
+    padding: 7px 13px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.amount-text {
+    color: #4f46e5;
+}
+
+.action-buttons {
+    white-space: nowrap;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.empty-icon {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.empty-state p {
+    color: #8a94a6;
+}
+
+
+/* =========================
+   FORMS
+========================= */
+
+.form-page {
+    padding: 50px 15px;
+}
+
+.form-card {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 40px;
+    border-radius: 28px;
+    box-shadow: 0 15px 45px rgba(30, 41, 59, 0.09);
+}
+
+.form-heading {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 35px;
+}
+
+.form-big-icon {
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background: #eef2ff;
+    font-size: 32px;
+}
+
+.form-heading h1 {
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.form-heading p {
+    color: #8a94a6;
+    margin: 0;
+}
+
+.form-label {
+    font-weight: 600;
+    color: #354052;
+}
+
+.form-control,
+.form-select {
+    padding: 13px 15px;
+    border-radius: 12px;
+    border: 1px solid #dce2ec;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 0.2rem rgba(99, 102, 241, 0.12);
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .dashboard-wrapper {
+        padding: 30px 18px;
+    }
+
+    .dashboard-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .dashboard-header h1 {
+        font-size: 29px;
+    }
+
+    .chart-card {
+        min-height: 450px;
+        padding: 20px;
+    }
+
+    .chart-container {
+        height: 340px;
+    }
+
+    .recent-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .form-card {
+        padding: 25px 20px;
+    }
+}

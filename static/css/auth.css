@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body.auth-body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background:
+        radial-gradient(
+            circle at top left,
+            #c4b5fd,
+            transparent 35%
+        ),
+        linear-gradient(
+            135deg,
+            #4f46e5,
+            #7c3aed,
+            #ec4899
+        );
+}
+
+.auth-wrapper {
+    min-height: 100vh;
+    display: flex;
+}
+
+.auth-left {
+    width: 55%;
+    padding: 50px 7%;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-left::before,
+.auth-left::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.auth-left::before {
+    width: 420px;
+    height: 420px;
+    right: -180px;
+    top: -150px;
+}
+
+.auth-left::after {
+    width: 300px;
+    height: 300px;
+    left: -150px;
+    bottom: -120px;
+}
+
+.auth-brand {
+    font-size: 23px;
+    font-weight: 800;
+    position: relative;
+    z-index: 2;
+}
+
+.auth-brand span {
+    margin-right: 8px;
+}
+
+.auth-left-content {
+    max-width: 650px;
+    margin: auto 0;
+    position: relative;
+    z-index: 2;
+}
+
+.auth-big-icon {
+    font-size: 65px;
+    margin-bottom: 15px;
+}
+
+.auth-left h1 {
+    font-size: 48px;
+    line-height: 1.12;
+    font-weight: 800;
+}
+
+.auth-left h1 span {
+    display: block;
+    color: #fde68a;
+}
+
+.auth-left p {
+    color: rgba(255, 255, 255, 0.82);
+    line-height: 1.8;
+    max-width: 570px;
+}
+
+.feature-list {
+    margin-top: 28px;
+}
+
+.feature-list div {
+    margin-bottom: 13px;
+    font-weight: 500;
+}
+
+.feature-list i {
+    margin-right: 10px;
+    color: #a7f3d0;
+}
+
+.auth-right {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 470px;
+    background: rgba(255, 255, 255, 0.97);
+    border-radius: 28px;
+    padding: 42px;
+    box-shadow: 0 30px 80px rgba(24, 18, 72, 0.28);
+}
+
+.mobile-logo {
+    display: none;
+}
+
+.auth-heading {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.heading-icon {
+    font-size: 42px;
+    margin-bottom: 8px;
+}
+
+.auth-heading h2 {
+    font-weight: 800;
+    color: #172033;
+}
+
+.auth-heading p {
+    color: #8992a3;
+    font-size: 14px;
+}
+
+.auth-input {
+    margin-bottom: 19px;
+}
+
+.auth-input label {
+    display: block;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 8px;
+}
+
+.input-wrapper {
+    position: relative;
+}
+
+.input-wrapper i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #7c3aed;
+}
+
+.input-wrapper input {
+    width: 100%;
+    padding: 14px 15px 14px 45px;
+    border: 1px solid #dce2ec;
+    border-radius: 13px;
+    outline: none;
+    font-family: inherit;
+}
+
+.input-wrapper input:focus {
+    border-color: #7c3aed;
+    box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.1);
+}
+
+.auth-button {
+    width: 100%;
+    border: none;
+    border-radius: 13px;
+    padding: 14px;
+    color: white;
+    font-family: inherit;
+    font-weight: 700;
+    background: linear-gradient(
+        90deg,
+        #5b3df5,
+        #7c3aed,
+        #ec4899
+    );
+    transition: 0.25s;
+}
+
+.auth-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(124, 58, 237, 0.25);
+}
+
+.auth-button i {
+    margin-left: 7px;
+}
+
+.auth-divider {
+    text-align: center;
+    margin: 24px 0;
+    position: relative;
+    color: #a0a8b6;
+    font-size: 12px;
+}
+
+.auth-divider::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #e5e7eb;
+}
+
+.auth-divider span {
+    position: relative;
+    background: white;
+    padding: 0 12px;
+}
+
+.switch-text {
+    text-align: center;
+    color: #7c8595;
+    font-size: 14px;
+    margin: 0;
+}
+
+.switch-text a {
+    color: #6d28d9;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.field-error {
+    color: #dc2626;
+    font-size: 13px;
+    margin-top: -10px;
+    margin-bottom: 12px;
+}
+
+@media (max-width: 900px) {
+
+    .auth-left {
+        width: 45%;
+        padding: 40px;
+    }
+
+    .auth-right {
+        width: 55%;
+        padding: 25px;
+    }
+
+    .auth-left h1 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .auth-wrapper {
+        display: block;
+    }
+
+    .auth-left {
+        display: none;
+    }
+
+    .auth-right {
+        width: 100%;
+        min-height: 100vh;
+        padding: 20px;
+    }
+
+    .auth-card {
+        padding: 30px 24px;
+    }
+
+    .mobile-logo {
+        display: block;
+        text-align: center;
+        font-weight: 800;
+        color: #5b3df5;
+        margin-bottom: 20px;
+    }
+}
